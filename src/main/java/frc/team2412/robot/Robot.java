@@ -57,6 +57,10 @@ public class Robot extends TimedRobot {
 		robotType = type;
 	}
 
+	public double getVoltage() {
+		return PDP.getVoltage();
+	}
+
 	protected Robot() {
 		this(getTypeFromAddress());
 	}
